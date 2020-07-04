@@ -1,0 +1,64 @@
+package com.example.n02_layouts;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Button btnLL, btnRL, btnTL, btnFL, btnCL, btnGL;
+    private Button btnTH1,btnmaytinh,btnTH2;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        this.setContentView(R.layout.activity_main);
+        this.registerControlsAndEvents();
+    }
+
+    private   void registerControlsAndEvents(){
+        this.btnLL = (Button) this.findViewById(R.id.buttonLinearLayout);
+        this.btnRL = (Button) this.findViewById(R.id.buttonRelativeLayout);
+        this.btnTL = (Button) this.findViewById(R.id.buttonTableLayout);
+        this.btnFL = (Button) this.findViewById(R.id.buttonFrameLayout);
+        this.btnCL = (Button) this.findViewById(R.id.buttonConstraintLayout);
+        this.btnGL = (Button) this.findViewById(R.id.buttonGridLayout);
+        this.btnTH1 = (Button) this.findViewById(R.id.idthuchanh);
+        this.btnmaytinh = (Button) this.findViewById(R.id.btnMayTinh);
+        this.btnTH2 = (Button) this.findViewById(R.id.btnTH2);
+
+//#region Doi Mau
+        this.btnLL.setBackgroundColor(Helper.getRandomARGB());
+        this.btnRL.setBackgroundColor(Helper.getRandomARGB());
+        this.btnTL.setBackgroundColor(Helper.getRandomARGB());
+        this.btnFL.setBackgroundColor(Helper.getRandomARGB());
+        this.btnCL.setBackgroundColor(Helper.getRandomARGB());
+        this.btnGL.setBackgroundColor(Helper.getRandomARGB());
+        this.btnTH1.setBackgroundColor(Helper.getRandomARGB());
+        this.btnmaytinh.setBackgroundColor(Helper.getRandomARGB());
+//#endregion
+        //----------------------------------
+        //#region Su kien click
+        this.btnLL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnLinearLayout_Click();
+            }
+        });
+        this.btnTH1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnth();
+            }
+        });
+        this.btnmaytinh.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                btnMayTinh();
+            }
+        });
+        this.btnTH2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/IdBac1"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="#BE49F436" />
+
+    <TextView
+        android:id="@+id/idBac2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/IdBac1"
+        android:layout_toRightOf="@id/IdBac1"
+        android:background="#BE49F436" />
+
+    <TextView
+        android:id="@+id/idBac3"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@id/IdBac1"
+        android:layout_toRightOf="@id/idBac2"
+        android:background="#BE49F436" />
+
+    <TextView
+        android:id="@+id/idBac4"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@id/IdBac1"
+        android:layout_toRightOf="@id/idBac3"
+        android:background="#BE49F436" />
+
+    <TextView
+        android:id="@+id/IdHinhVuong1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/IdBac1"
+        android:layout_marginLeft="30dp"
+        android:background="#FA0505" />
+
+    <TextView
+        android:id="@+id/idHinhVuong2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/idBac2"
+        android:layout_alignLeft="@id/idBac2"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:id="@+id/idHinhVuong3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/idBac3"
+        android:layout_alignLeft="@id/idBac3"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:id="@+id/idHinhVuong4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/idBac4"
+        android:layout_alignLeft="@id/idBac4"
+        android:layout_marginLeft="30dp" />
+</RelativeLayout>
